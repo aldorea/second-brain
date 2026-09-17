@@ -1,0 +1,16 @@
+# Original PDFs — converted to Markdown on distill, kept only as fallback.
+# Binaries have no diff and no history worth keeping.
+pdf-originals/*
+!pdf-originals/.gitkeep
+
+# Obsidian per-machine state. Shared settings are tracked; workspace is not.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Obsidian Sync metadata
+.obsidian/sync.json
+.obsidian/sync-*.json
+
+.DS_Store
+.trash/

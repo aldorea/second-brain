@@ -20,7 +20,7 @@ Phase 0 of 4. See the phase table in `DESIGN.md`.
 
 - [x] Design recorded
 - [x] Vault structure and conventions
-- [ ] Capture — Web Clipper, Reminders bridge
-- [ ] Distillation — skill and PDF pipeline
-- [ ] Triage of the existing vault
-- [ ] Weekly review
+- [x] Skills — `/distill`, `/review`, `/triage`
+- [x] Scripts — Reminders bridge, PDF conversion
+- [ ] Install against the real vault
+- [ ] Triage run on the existing vault

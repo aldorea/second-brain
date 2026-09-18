@@ -25,6 +25,29 @@ cd ~/vault && git add -A && git commit -m "Initialize vault structure"
 Git runs on the Mac only. Sync moves files between devices; git keeps history.
 Never commit from mobile.
 
+## Skills
+
+Run from the vault root with Claude Code.
+
+| Skill | Does |
+| --- | --- |
+| `/distill` | Flush captures, convert PDFs, turn the inbox into linked notes |
+| `/review` | Weekly: pending inbox, orphan notes, proposed connections |
+| `/triage` | One-off: analyze an existing vault and propose a migration plan |
+
+## Scripts
+
+| Script | Does |
+| --- | --- |
+| `scripts/flush-reminders.sh` | Reminders `Inbox` list → `00-inbox/`. macOS only |
+| `scripts/convert-pdf.sh` | PDF → Markdown in `30-sources/` via `marker` |
+
+`marker` is not bundled. Install it before the first distill:
+
+```bash
+pip install marker-pdf
+```
+
 ## Layout
 
 | Folder | Holds |

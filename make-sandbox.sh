@@ -172,7 +172,7 @@ EOF
 # --- A PDF placeholder, so the conversion path is visible ------------------
 
 cat >pdf-originals/README.md <<'EOF'
-Drop a real PDF here to exercise scripts/convert-pdf.sh.
+Drop a real PDF here to exercise .claude/skills/distill/scripts/convert-pdf.sh.
 That path needs `pip install marker-pdf` and is the one step this sandbox
 cannot fake.
 EOF

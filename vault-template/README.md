@@ -19,8 +19,8 @@ cd ~/vault && git add -A && git commit -m "Initialize vault structure"
    This is chosen at creation and cannot be changed later without recreating it.
    Store the password somewhere you will not lose it.
 3. Install the Obsidian Web Clipper in Safari (macOS and iOS).
-4. Create a Reminders list named `Inbox`, used for captured ideas only — never
-   tasks.
+4. Create a folder named `Inbox` in Apple Notes, used for captured ideas only —
+   never anything else.
 
 Git runs on the Mac only. Sync moves files between devices; git keeps history.
 Never commit from mobile.
@@ -39,8 +39,8 @@ Run from the vault root with Claude Code.
 
 | Script | Does |
 | --- | --- |
-| `scripts/flush-reminders.sh` | Reminders `Inbox` list → `00-inbox/`. macOS only |
-| `scripts/convert-pdf.sh` | PDF → Markdown in `30-sources/` via `marker` |
+| `.claude/skills/distill/scripts/flush-notes.sh` | Apple Notes `Inbox` folder → `00-inbox/`. macOS only |
+| `.claude/skills/distill/scripts/convert-pdf.sh` | PDF → Markdown in `30-sources/` via `marker` |
 
 `marker` is not bundled. Install it before the first distill:
 

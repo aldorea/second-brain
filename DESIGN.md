@@ -74,17 +74,17 @@ breaks whichever loses.
 | Source | Path |
 | --- | --- |
 | Web article | Obsidian Web Clipper (Safari on macOS/iOS) → `00-inbox/` |
-| Spoken idea | Siri → Reminders list `Inbox` → flushed on distill |
+| Quick capture | Apple Notes folder `Inbox` → flushed on distill |
 | PDF | Local folder, git-ignored → converted on distill |
 
-Reminders is the capture buffer for spoken ideas because **Obsidian Sync does
-not run in the background on iOS** — the app must be open to sync. Reminders
-syncs natively in the background. The list is dedicated and holds ideas only,
-never tasks: a task completes and disappears, an idea persists and gets linked.
+Apple Notes is the capture buffer for quick captures because **Obsidian Sync
+does not run in the background on iOS** — the app must be open to sync. Notes
+syncs natively in the background via iCloud. The folder is dedicated and holds
+ideas only, never anything else.
 
 ### Distill — on demand
 
-1. Flush the Reminders `Inbox` list into `00-inbox/`
+1. Flush the Apple Notes `Inbox` folder into `00-inbox/`
 2. Convert pending PDFs with `marker`; set `conversion: suspect` on bad output
 3. For each raw item, produce:
    - a **source note** in `30-sources/` — summary, key claims, verbatim quotes
@@ -227,7 +227,7 @@ context-free fragments, duplicates) as a review list.
 | Phase | Deliverable |
 | --- | --- |
 | 0 | Vault repo, structure, `CLAUDE.md`, Sync with E2E |
-| 1 | Capture working — Web Clipper and Reminders bridge |
+| 1 | Capture working — Web Clipper and Apple Notes bridge |
 | 2 | Distillation — skill and `marker` pipeline |
 | 3 | Triage of the existing vault |
 | 4 | Weekly review |
@@ -242,4 +242,4 @@ nothing to distill.
 | Obsidian Sync pricing | **Unverified** — vendor page was unreachable during research |
 | `marker` quality on the real corpus | Untested until Phase 2 |
 | E2E encryption choice | **Irreversible** once the remote vault exists |
-| Reminders bridge | macOS-only; needs rebuilding on a new machine |
+| Apple Notes bridge | macOS-only; needs rebuilding on a new machine |

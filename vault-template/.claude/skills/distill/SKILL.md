@@ -11,16 +11,17 @@ Read `CLAUDE.md` first — it holds the conventions this skill assumes.
 
 ## 1. Flush pending captures
 
-Run `scripts/flush-reminders.sh`. It moves the Reminders `Inbox` list into
-`00-inbox/` and marks those reminders done.
+Run `.claude/skills/distill/scripts/flush-notes.sh`. It moves the Apple Notes
+`Inbox` folder into `00-inbox/` and archives those notes into an `Archived`
+folder in Notes.
 
-macOS only. If it fails, report it and continue — spoken capture is one source,
-not the only one.
+macOS only. If it fails, report it and continue — spoken/typed capture is one
+source, not the only one.
 
 ## 2. Convert pending PDFs
 
 For each PDF in `pdf-originals/` with no matching note in `30-sources/`, run
-`scripts/convert-pdf.sh <file>`.
+`.claude/skills/distill/scripts/convert-pdf.sh <file>`.
 
 Inspect the output before distilling it. If tables are mangled, headings are
 lost, or the text is visibly garbled, set `conversion: suspect` in the

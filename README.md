@@ -21,6 +21,6 @@ Phase 0 of 4. See the phase table in `DESIGN.md`.
 - [x] Design recorded
 - [x] Vault structure and conventions
 - [x] Skills — `/distill`, `/review`, `/triage`
-- [x] Scripts — Reminders bridge, PDF conversion
+- [x] Scripts — Apple Notes bridge, PDF conversion
 - [ ] Install against the real vault
 - [ ] Triage run on the existing vault

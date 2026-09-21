@@ -11,7 +11,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # shellcheck source=lib.sh
 . "$SCRIPT_DIR/lib.sh"
 
-VAULT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+VAULT_ROOT="$(cd "$SCRIPT_DIR/../../../.." && pwd)"
 SOURCES="$VAULT_ROOT/30-sources"
 
 if [ $# -ne 1 ]; then

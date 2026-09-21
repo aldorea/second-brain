@@ -1,0 +1,6 @@
+# Material that must never leave this machine.
+# Nothing under this path is read, written, or sent for processing.
+50-private/
+
+pdf-originals/
+.obsidian/

@@ -20,7 +20,7 @@ source, not the only one.
 
 ## 2. Convert pending PDFs
 
-For each PDF in `pdf-originals/` with no matching note in `30-sources/`, run
+For each PDF in `pdf-originals/` with no matching note in `10-sources/`, run
 `.claude/skills/distill/scripts/convert-pdf.sh <file>`.
 
 Inspect the output before distilling it. If tables are mangled, headings are
@@ -32,14 +32,14 @@ work nobody sustains.
 
 For every file in `00-inbox/` with `status: raw`, read it fully, then produce:
 
-**A source note** in `30-sources/`
+**A source note** in `10-sources/`
 
 - What it argues, in a few sentences
 - Its key claims
 - Verbatim quotes worth keeping, **in their original language**
 - Where it came from
 
-**Atomic notes** in `40-notes/`, one per idea
+**Atomic notes** in `20-notes/`, one per idea
 
 - The filename states the claim:
   `capture-without-processing-creates-a-dump.md`
@@ -49,7 +49,7 @@ For every file in `00-inbox/` with `status: raw`, read it fully, then produce:
 
 **Suggested links**
 
-Search `40-notes/` before concluding a note stands alone. For each new note,
+Search `20-notes/` before concluding a note stands alone. For each new note,
 find existing notes it **contradicts**, **extends**, or **exemplifies**, and
 write the link with a phrase saying which.
 

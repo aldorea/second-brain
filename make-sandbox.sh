@@ -71,7 +71,7 @@ EOF
 
 # --- Existing notes, so distill has something to link against --------------
 
-cat >30-sources/deep-work.md <<'EOF'
+cat >10-sources/deep-work.md <<'EOF'
 ---
 type: source
 created: 2026-08-02
@@ -94,7 +94,7 @@ increasingly valuable, and that the two facts compound.
 > Clarity about what matters provides clarity about what does not.
 EOF
 
-cat >40-notes/context-switching-has-a-fixed-cost.md <<'EOF'
+cat >20-notes/context-switching-has-a-fixed-cost.md <<'EOF'
 ---
 type: note
 created: 2026-08-02
@@ -110,7 +110,7 @@ interruption lasted, which is why a two-minute interruption is not two minutes
 lost.
 EOF
 
-cat >40-notes/frictionless-capture-shifts-work-downstream.md <<'EOF'
+cat >20-notes/frictionless-capture-shifts-work-downstream.md <<'EOF'
 ---
 type: note
 created: 2026-08-14

@@ -40,7 +40,7 @@ Run from the vault root with Claude Code.
 | Script | Does |
 | --- | --- |
 | `.claude/skills/distill/scripts/flush-notes.sh` | Apple Notes `Inbox` folder → `00-inbox/`. macOS only |
-| `.claude/skills/distill/scripts/convert-pdf.sh` | PDF → Markdown in `30-sources/` via `marker` |
+| `.claude/skills/distill/scripts/convert-pdf.sh` | PDF → Markdown in `10-sources/` via `marker` |
 
 `marker` is not bundled. Install it before the first distill:
 
@@ -53,10 +53,7 @@ pip install marker-pdf
 | Folder | Holds |
 | --- | --- |
 | `00-inbox/` | Raw captures awaiting distillation |
-| `10-projects/` | Actionable work with an end date |
-| `20-areas/` | Ongoing responsibilities |
-| `30-sources/` | Books, articles, papers |
-| `40-notes/` | Atomic permanent notes |
-| `50-private/` | Excluded from Claude |
-| `90-archive/` | Closed work |
+| `10-sources/` | Books, articles, papers |
+| `20-notes/` | Atomic permanent notes |
+| `30-private/` | Excluded from Claude |
 | `pdf-originals/` | Source PDFs, git-ignored, fallback only |

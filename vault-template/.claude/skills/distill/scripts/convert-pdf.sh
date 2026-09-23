@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Convert a PDF to Markdown in 30-sources/ using marker.
+# Convert a PDF to Markdown in 10-sources/ using marker.
 #
 # marker runs fully local — nothing is uploaded. Install with:
 #   pip install marker-pdf
@@ -12,7 +12,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "$SCRIPT_DIR/lib.sh"
 
 VAULT_ROOT="$(cd "$SCRIPT_DIR/../../../.." && pwd)"
-SOURCES="$VAULT_ROOT/30-sources"
+SOURCES="$VAULT_ROOT/10-sources"
 
 if [ $# -ne 1 ]; then
   echo "usage: convert-pdf.sh <file.pdf>" >&2

@@ -18,8 +18,8 @@ to prevent.
 
 ## 2. Orphan notes
 
-Notes in `40-notes/` with no links in and none out. List them with a one-line
-summary, and for each either propose a link or suggest archiving it.
+Notes in `20-notes/` with no links in and none out. List them with a one-line
+summary, and for each either propose a link or flag it as a deletion candidate.
 
 An orphan is not a crime. An orphan that stays orphaned for months is a note
 that was never worth keeping.

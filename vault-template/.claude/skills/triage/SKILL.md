@@ -29,11 +29,16 @@ own vault, and being surprised changes what they want done with it.
 
 | Destination | What goes there |
 | --- | --- |
-| `30-sources/` | Notes *about* something read — book, article, talk |
-| `40-notes/` | Notes making a claim of the user's own |
-| `10-projects/` | Anything with a deadline or a deliverable |
-| `20-areas/` | Ongoing responsibilities |
-| `90-archive/` | Finished, superseded, or dead |
+| `10-sources/` | Notes *about* something read — book, article, talk |
+| `20-notes/` | Notes making a claim of the user's own |
+
+Anything actionable — a deadline, a deliverable, an ongoing responsibility —
+does not belong in this vault at all. Flag it separately as "out of scope,
+lives elsewhere" rather than forcing it into a folder here.
+
+A note that is superseded or no longer held is not archived; it stays in
+`20-notes/` and gets linked as `supersedes` / `superseded-by` to whatever
+replaced it.
 
 When a note does not fit, say so rather than forcing it. A note that resists
 classification is usually two notes wearing one filename.

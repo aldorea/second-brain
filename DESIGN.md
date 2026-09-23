@@ -54,18 +54,21 @@ conflicts from an iPad is exactly the friction this design avoids.
 
 ```
 00-inbox/      Tray. Gets emptied, never accumulates
-10-projects/   Actionable, has an end date
-20-areas/      Ongoing responsibilities
-30-sources/    Books, articles, papers — the raw material
-40-notes/      Atomic permanent notes — the knowledge
-50-private/    Excluded from Claude via .claudeignore
-90-archive/    Closed
+10-sources/    Books, articles, papers — the raw material
+20-notes/      Atomic permanent notes — the knowledge
+30-private/    Excluded from Claude via .claudeignore
 ```
 
-A hybrid of PARA and Zettelkasten, because the content has two natures. Work
-material is actionable and expires (PARA). Knowledge from books and articles is
-permanent and wants to be linked (Zettelkasten). Forcing both into one model
-breaks whichever loses.
+Pure Zettelkasten. This vault holds knowledge, not work — permanent notes that
+want to be linked, not actionable material with an end date. Actionable/project
+work is deliberately out of scope and lives in whatever system already tracks
+it; mixing the two breaks the one thing this vault optimizes for, which is
+notes finding each other.
+
+A note that is superseded is never moved to an archive folder — it stays in
+place and gets linked as `supersedes` / `superseded-by`. Moving it would hide
+the fact that you changed your mind, which is exactly the signal a folder-based
+archive destroys and a link preserves.
 
 ## Flows
 
@@ -87,8 +90,8 @@ ideas only, never anything else.
 1. Flush the Apple Notes `Inbox` folder into `00-inbox/`
 2. Convert pending PDFs with `marker`; set `conversion: suspect` on bad output
 3. For each raw item, produce:
-   - a **source note** in `30-sources/` — summary, key claims, verbatim quotes
-   - one or more **atomic notes** in `40-notes/` — one idea each, titled as a
+   - a **source note** in `10-sources/` — summary, key claims, verbatim quotes
+   - one or more **atomic notes** in `20-notes/` — one idea each, titled as a
      claim, linked to the source
    - **suggested links** to existing notes: what this contradicts, extends,
      or exemplifies
@@ -135,7 +138,7 @@ what you filed is a filing cabinet.
 
 ```yaml
 ---
-type: note          # source | note | project | area
+type: note          # source | note
 created: 2026-09-17
 status: distilled   # raw | distilled
 source: "[[deep-work]]"   # atomic notes only
@@ -198,7 +201,7 @@ use; revisit before any commercial use.
 Data is private. Two consequences:
 
 - Distillation sends note content to the API. Material that must never leave the
-  machine goes in `50-private/`, excluded via `.claudeignore`. A folder is a
+  machine goes in `30-private/`, excluded via `.claudeignore`. A folder is a
   physical gesture; a frontmatter flag gets forgotten on the day it matters.
 - Obsidian Sync uses **end-to-end encryption**. This is chosen when the remote
   vault is created and **cannot be changed afterwards** without recreating it.

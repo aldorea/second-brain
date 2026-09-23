@@ -11,12 +11,12 @@ operating manual.
 | Folder | Holds |
 | --- | --- |
 | `00-inbox/` | Raw captures awaiting distillation. Gets emptied |
-| `10-projects/` | Actionable work with an end date |
-| `20-areas/` | Ongoing responsibilities |
-| `30-sources/` | Books, articles, papers |
-| `40-notes/` | Atomic permanent notes |
-| `50-private/` | **Never read or write here.** Excluded via `.claudeignore` |
-| `90-archive/` | Closed work |
+| `10-sources/` | Books, articles, papers |
+| `20-notes/` | Atomic permanent notes |
+| `30-private/` | **Never read or write here.** Excluded via `.claudeignore` |
+
+No archive folder. A superseded note stays where it is and gets linked as
+`supersedes` / `superseded-by` instead of being moved.
 
 ## Naming
 
@@ -32,7 +32,7 @@ Exactly these fields. Do not add others.
 
 ```yaml
 ---
-type: note          # source | note | project | area
+type: note          # source | note
 created: 2026-09-17
 status: distilled   # raw | distilled
 source: "[[deep-work]]"   # atomic notes only
@@ -59,9 +59,9 @@ source: "[[deep-work]]"   # atomic notes only
 
 For each item in `00-inbox/` with `status: raw`:
 
-1. Write a **source note** in `30-sources/` — summary, key claims, verbatim
+1. Write a **source note** in `10-sources/` — summary, key claims, verbatim
    quotes worth keeping.
-2. Write **atomic notes** in `40-notes/` — one idea per note, titled as a claim,
+2. Write **atomic notes** in `20-notes/` — one idea per note, titled as a claim,
    each linking back to its source.
 3. Propose **links to existing notes** — what this contradicts, extends, or
    exemplifies. Search the vault before concluding a note is unconnected.
